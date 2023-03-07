@@ -47,7 +47,7 @@
   
   /* ------ Global Styles -------*/
   body{
-    background-color:teal;
+    background-color:#90e0ef;
     color:#efefef;
     line-height:1.6
     padding: 20px;
@@ -112,14 +112,14 @@
     font-weight:800;
     grid-column: 1;
     padding: 10px 0;
-    border-bottom:4px double #fff;
+    border-bottom:1px solid #999;
     text-align: center;
   }
   dd{
     margin:0;
     grid-column: 2;
     padding: 15px 0;
-    border-bottom:4px double #fff;
+    border-bottom:1px double #999;
  
   }
   .related-links{
@@ -162,7 +162,7 @@
   }
   
   .job, .certificate{
-    border-bottom:1px solid #fff;
+    border-bottom:1px solid #999;
     padding-bottom:20px;
   }
   
@@ -178,10 +178,6 @@
   .job h3{
     margin:20px 0 0 0;
   }
-  
-.link{
-  color: #fff;
-}
   
   footer{
     text-align:center;
