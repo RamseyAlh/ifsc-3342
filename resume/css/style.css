@@ -17,6 +17,10 @@
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+  .link{
+    color: #fff;
+  }
   
   /* ------ Typography -------*/
   body {font-family: "Lucida Console", "Courier New", monospace;}
@@ -29,7 +33,7 @@
   /* ------ Utility Classes  -------*/
   .container{
     margin:0 auto;
-    width:480px;
+    width: 480px;
   }
   
   /* ------ Helper Classes -------*/
@@ -50,8 +54,7 @@
     background-color:teal;
     color:#efefef;
     line-height:1.6
-    padding: 20px;
-  } 
+    padding: 20px; } 
 
   a:link, a:visited{
     color:#222;
@@ -64,7 +67,7 @@
   }
   nav a:link, nav a:visited{
     border-radius: 25px;
-    padding:8px 16px;
+    padding: 8px 16px;
     text-align:center;
     text-decoration:none;
     text-transform:uppercase;
@@ -116,7 +119,6 @@
     text-align: center;
   }
   dd{
-    margin:0;
     grid-column: 2;
     padding: 15px 0;
     border-bottom:4px double #fff;
@@ -160,6 +162,14 @@
   #skills li {
     list-style-type:square;
   }
+
+  .job a:link{
+    color: #fff;
+  }
+
+  .personal a:link{
+    color:#fff
+  }
   
   .job, .certificate{
     border-bottom:1px solid #fff;
@@ -179,9 +189,7 @@
     margin:20px 0 0 0;
   }
   
-.link{
-  color: #fff;
-}
+  
   
   footer{
     text-align:center;
@@ -414,4 +422,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
