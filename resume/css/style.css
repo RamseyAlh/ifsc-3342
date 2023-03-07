@@ -66,7 +66,6 @@
     padding:20px 20px 0px 20px;
   }
   nav a:link, nav a:visited{
-    border-radius: 25px;
     padding: 8px 16px;
     text-align:center;
     text-decoration:none;
@@ -76,7 +75,15 @@
     transition: background-color .5s ease;
     color:#002640;
   }
+  nav a:first-child{
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px
+  }
   
+  nav a:last-child{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
   nav a:hover{
      background-color:#002640;
      color:#fff;
