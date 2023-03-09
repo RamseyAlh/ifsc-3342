@@ -202,7 +202,70 @@
     text-align:center;
   padding:20px 0;
   }
+
+  main.container{
+    display:grid;
+    grid-template-areas: "title"
+    "about"
+    "experience"
+    "education"
+    "skills";
+  }
+
+  .page-title{
+    grid-area: title;
+  }
+  #about{
+    grid-area: about;
+  }
+  #skills{
+    grid-area: skills;
+  }
+  #experience{
+    grid-area: experience;
+  }
+  #education{
+    grid-area: education;
+  }
+
+  @media  screen and (min-width:768px) {
+    main.container {
+      max-width: 800px;
+      grid-template-columns: 36.5% auto;
+      grid-template-areas: 
+      "title title"
+      "about about"
+      "skills experience"
+      "...... education";
+    } 
+  }
+
+  header.container{
+    max-width: 800px;
+  }
+
+  #about{
+    display:grid;
+    grid-gap:2em;
+    grid-template-columns: 250px 1fr auto;
+    grid-template-areas: 
+     "bio details deatails"
+     "related related related";
+  }
+  .bio{
+    grid-area: bio;
+  }
+  .details{
+    grid-area: details;
+  }
+
+  .related-links{
+    grid-area: related;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 50px;
+  }
 /*
+
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
  *
@@ -352,10 +415,18 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 460px){
+  .related-links li a svg{display: none;}
 }
 
+@media only screen and (max-width: 395){
+.related-links{
+  flex-direction: column;
+}
+.related-links a{
+  display: block;
+}
+}
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
