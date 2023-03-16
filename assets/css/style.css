@@ -72,7 +72,13 @@ nav ul li a{
   margin:40px auto;
  }
 
-
+img{
+  width: 80vw;
+  margin: 0 auto;
+  padding-bottom: 10;
+  max-width: 900px;
+  display: inline-block;
+}
 
 @media screen and (max-width: 600px) {
   header.primary nav ul {

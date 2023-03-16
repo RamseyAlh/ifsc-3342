@@ -35,16 +35,24 @@ header.primary {
     grid-column: 1 / span 12;
 }
 
+#content{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    padding:0 20px;
+    width: 80vw;
+}
+
 #blog {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
-    grid-column: 1 / span 12;
+    grid-column: 1 / span 7;
 }
 
 aside{
     background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
-    grid-column: 1 / span 6;
+    grid-column: 8 / span 4;
 }
 
 footer.primary{

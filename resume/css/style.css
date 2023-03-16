@@ -195,7 +195,7 @@ main h1{
     text-align:center;
   padding:20px 0;
   }
-
+/*
   main.container{
     display:grid;
     grid-template-areas: 
@@ -222,7 +222,7 @@ main h1{
     grid-area: education;
   }
 
-  @media  screen and (min-width:768px) {
+  /*@media  screen and (min-width:768px) {
     main.container {
       max-width: 800px;
       grid-template-columns: 36.5% auto;
@@ -247,6 +247,7 @@ main h1{
       ;
     }
   }
+  */
 
   header.container{
     max-width: 800px;
@@ -272,7 +273,7 @@ main h1{
     border-bottom: 1px solid #fff;
     padding-bottom: 50px;
   }
-
+*/
 /*
 
  * Remove text-shadow in selection highlight:
