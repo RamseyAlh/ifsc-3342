@@ -156,11 +156,25 @@ nav a.active {
   transition: .5s;
   background-color: #811616;
 }
+
+#content article.book{
+  width: 45%;
+  box-shadow:0 4px 8px rgba(0,0,0,.4);
+  padding: 10px;
+  border-radius: 4px;
+  font-size: .7rem;
+  transition: .5s;
+  background-color: #811616;
+}
+
 h3{
   font-size: .8rem;
   color: #c0c0c0;
 }
 #content article.post:hover{
+  box-shadow:0 8px 16px rgba(0,0,0,.4);
+}
+#content article.book:hover{
   box-shadow:0 8px 16px rgba(0,0,0,.4);
 }
 
@@ -194,6 +208,40 @@ time.post-date, figcaption, .post-meta{
   text-decoration:none;
 }
 
+/*Book*/
+.book p{
+  font-size: .85rem;
+  color: #c0c0c0;
+}
+.book h2{
+  font-size: 1.5rem;
+}
+
+.book h3{
+  font-size: 1.15rem;
+}
+
+.book figure{
+  margin:0;
+}
+
+.book img{
+  border:1px solid #c0c0c0;
+  padding:2px;
+  margin: 5px 0;
+  margin-right: 10px;
+}
+
+.book a{
+  color: #ffffff;
+  transition: .5s;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.book a:hover .post a:active{
+  text-decoration:none;
+}
 aside[role="complementary"]{
   background-color:#33536B;
   color:#ffffff;
