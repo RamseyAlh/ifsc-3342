@@ -1,11 +1,11 @@
 
 /* ---Stylesheet for CSS Demo--- */
 /* Color Pallete 
- #53616B 
- #1B2C38 
- #181C1F - Base
- #33536B
- #8EA6B8 */
+ #f27d16
+ #591c1c 
+ #bf1b1b - Base
+ #f2dfbb
+ #fffff */
 /* ---------------Box Sizing----------------- */
 
 html {
@@ -25,10 +25,8 @@ html {
   }
 #interior{
   display: block;
-  background-image: url(../img/dragon-intertior-cargo.jpg);
-
+  background-color: #bf1b1b;
 }
-
   img{
     max-width: 100%;
   }
@@ -36,21 +34,21 @@ html {
   .img-right{
     float:right;
     margin-left:20px;
-    border:3px solid #53616B;
+    border:3px solid #000000;
     padding:5px;
   }
 
   .img-left{
     float:left;
     margin-right:20px;
-    border:3px solid #53616B;
+    border:3px solid #000000;
     padding:5px;
   }
 
   .img-center{
     display:block;
     margin:20px auto;
-    border:3px solid #53616B;
+    border:3px solid #000000;
     padding:5px;
   }
 /* Global Styles*/
@@ -60,7 +58,7 @@ body{
 }
 
 header.primary {
-    background-color: #181c1f;
+    background-color: #3d0b0b;
     text-align: center;
     color: #ffffff;
     text-shadow: 2px 2px #000000;
@@ -71,7 +69,7 @@ header.primary {
 
   header.primary::before {
     content: "";
-    background-image: url("../img/dragoncrew.8k.jpg");
+  
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -88,6 +86,7 @@ header.primary h1 a{
 }
 h1{
     text-align: center;
+    font-size: 400%;
 }
 
 header.primary h2{
@@ -99,9 +98,9 @@ header.primary h2{
 
 nav ul {
   list-style: none;
-  background-color: #181C1F;
+  background-color: #f2dfbb;
   text-align: center;
-  padding: 0;
+  padding: 10;
   margin: 0;
 }
 nav li {
@@ -113,18 +112,18 @@ nav li {
  
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   display: block;
   transition: .3s background-color;
 }
  
 nav a:hover {
-  background-color: #1B2C38;
+  background-color: #552800;
 }
  
 nav a.active {
   background-color: #fff;
-  color: #181C1F;
+  color: #f2dfbb;
   cursor: default;
 }
 
@@ -134,7 +133,7 @@ nav a.active {
 }
 
 #intro h2 {
-  color: #1B2C38;
+  color: #000;
   border-bottom: 1px dotted #c0c0c0;
 }
 #content{
@@ -155,7 +154,7 @@ nav a.active {
   border-radius: 4px;
   font-size: .7rem;
   transition: .5s;
-  background-color: #53616B;
+  background-color: #811616;
 }
 h3{
   font-size: .8rem;
@@ -169,7 +168,10 @@ time.post-date, figcaption, .post-meta{
   text-transform: uppercase;
   color:#c0c0c0;
 }
-
+.post p{
+  font-size: .7rem;
+  color: #c0c0c0;
+}
 
 .post figure{
   margin:0;
@@ -220,7 +222,7 @@ article.widget footer{
 }
 
 footer#colophon {
-    background-color: #1b2c38;
+    background-color: #3d0b0b;
   }
   
   #colophon h6 {
@@ -336,7 +338,7 @@ dd + dt{
   margin-top: 1.2rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   nav li {
     width: 150px;
     border-bottom: none;
@@ -350,11 +352,11 @@ dd + dt{
   }
   nav ul {
     overflow: auto;
-    width: 600px;
+    width:45%;
     margin: 0 auto;
   }
   nav {
-    background-color:  #181C1F;
+    background-color:  #f2dfbb;
   }
 
   nav.sticky{
