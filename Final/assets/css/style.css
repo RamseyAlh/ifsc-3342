@@ -63,7 +63,7 @@ header.primary {
     color: #ffffff;
     text-shadow: 2px 2px #000000;
     /* Shorhand T,R,B,L*/
-    padding: 6em 2em;
+    padding: 4em 2em;
     position: relative;
   }
 
@@ -175,7 +175,15 @@ nav a.active {
   transition: .5s;
   background-color: #811616;
 }
-
+#content article.rec{
+  width: 40%;
+  box-shadow:0 4px 8px rgba(0,0,0,.4);
+  padding: 10px;
+  border-radius: 4px;
+  font-size: .7rem;
+  transition: .5s;
+  background-color: #811616;
+}
 h3{
   font-size: .8rem;
   color: #c0c0c0;
@@ -285,7 +293,48 @@ time.post-date, figcaption, .post-meta{
   font-size: 1.2rem;
 }
 
-.char a:hover .post a:active{
+.char a:hover .char a:active{
+  text-decoration:none;
+}
+
+#content article.rec:hover{
+  box-shadow:0 8px 16px rgba(0,0,0,.4);
+}
+#content article.rec:hover{
+  box-shadow:0 8px 16px rgba(0,0,0,.4);
+}
+
+#content article.rec:hover{
+  box-shadow:0 8px 16px rgba(0,0,0,.4);
+}
+time.rec-date, figcaption, .rec-meta{
+  text-transform: uppercase;
+  color:#c0c0c0;
+}
+.rec p{
+  font-size: .7rem;
+  color: #c0c0c0;
+}
+
+.rec figure{
+  margin:0;
+}
+
+.rec img{
+  border:1px solid #c0c0c0;
+  padding:2px;
+  margin: 5px 0;
+  margin-left: 5px;
+}
+
+.rec a{
+  color: #ffffff;
+  transition: .5s;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.rec a:hover .post a:active{
   text-decoration:none;
 }
 
